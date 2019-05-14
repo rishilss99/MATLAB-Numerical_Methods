@@ -13,6 +13,7 @@ end
 x = zeros(rows,1);
 for i=rows:-1:1
     x(i,1)=(b(i,1)-a(i,:)*x(:,1))/a(i,i);
+    disp(a);
 end
 disp(x);
 
